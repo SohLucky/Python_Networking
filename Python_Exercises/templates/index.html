@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block body %}
+
+	<h1>Python Builtins Docstrings</h1>
+	<div>
+	{% for func in funcs %}
+		<div class="menuitems link">
+			<a href='/functions/{{ func }}">{{ func }}</a>
+		</div>
+	{% endfor %}
+	</table>
+{% endblock %}
